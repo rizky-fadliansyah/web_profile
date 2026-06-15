@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Digital CV & Links</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* CSS RESET & VARIABLES */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: #0f172a; /* Warna background gelap yang elegan */
+            color: #f8fafc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* CONTAINER UTAMA */
+        .container {
+            width: 100%;
+            max-width: 480px; /* Lebar maksimal seukuran layar HP */
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* PROFILE SECTION */
+        .profile-img {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #38bdf8; /* Accent border warna biru muda */
+            margin-bottom: 16px;
+            box-shadow: 0 4px 20px rgba(56, 189, 248, 0.2);
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 6px;
+            letter-spacing: -0.025em;
+        }
+
+        .tagline {
+            font-size: 0.95rem;
+            color: #38bdf8;
+            font-weight: 500;
+            margin-bottom: 12px;
+        }
+
+        .bio {
+            font-size: 0.9rem;
+            color: #94a3b8;
+            line-height: 1.5;
+            margin-bottom: 32px;
+        }
+
+        /* LINKS SECTION */
+        .links-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 16px; /* Jarak antar tombol */
+        }
+
+        .link-card {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #1e293b; /* Warna tombol */
+            color: #f8fafc;
+            text-decoration: none;
+            padding: 16px;
+            border-radius: 12px;
+            font-weight: 500;
+            font-size: 0.95rem;
+            border: 1px solid #334155;
+            transition: all 0.2s ease-in-out;
+        }
+
+        /* Efek Hover / Saat Tombol Ditekan */
+        .link-card:hover {
+            background-color: #334155;
+            border-color: #38bdf8;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(56, 189, 248, 0.1);
+        }
+
+        /* FOOTER */
+        footer {
+            margin-top: 48px;
+            font-size: 0.75rem;
+            color: #64748b;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="profile.jpg" alt="Foto Profil" class="profile-img">
+        
+        <h1>Nama Lengkap Kamu</h1>
+        <p class="tagline">IT Student / System Analyst Enthusiast</p>
+        <p class="bio">Tertarik pada pengembangan sistem web, manajemen basis data, dan analisis proses bisnis. Suka membangun sesuatu yang terstruktur dari nol.</p>
+
+        <div class="links-wrapper">
+            <a href="https://github.com/rizky-fadliansyah" target="_blank" class="link-card">
+                💻 GitHub Repositories
+            </a>
+            
+            <a href="https://drive.google.com/file/d/1ugl---hsREmzbrNbrGGrZGsDdMxZ6CT6/view?usp=sharing" target="_blank" class="link-card">
+                📄 Download CV (PDF)
+            </a>
+
+             <a href="https://wa.me/6288102778749?text=Halo%20Rizky,%20saya%20tertarik%20dengan%20CV%20Anda" target="_blank" class="link-card">
+                💬 Hubungi via WhatsApp
+            </a>
+            
+            <a href="mailto:blogerrizky@gmail.com" class="link-card">
+                ✉️ Hubungi Via Email
+            </a>
+        </div>
+
+        <footer>
+            &copy; 2026 Rizky Fadliansyah. All rights reserved.
+        </footer>
+    </div>
+
+</body>
+</html>
